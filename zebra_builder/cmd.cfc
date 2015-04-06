@@ -1,6 +1,6 @@
 component
 output = "false"
-hint = "ABSTRACT CLASS para los comandos de zebra"
+hint = "clase abstracta para los comandos de zebra"
 {
 	/**
 	 * @hint constructor de la clase
