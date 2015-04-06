@@ -1,7 +1,7 @@
 <cfset testSuite = createObject( "component", "mxunit.framework.TestSuite" ).TestSuite() />
  
 <!--- agrega las pruebas de la clase cmd --->
-<cfset testSuite.addAll( "spec.cmd_test" ) />
+<cfset testSuite.addAll( "spec.Cmd_test" ) />
  
 <!---
     Run the tests that have been added. This will include all the

@@ -1,6 +1,6 @@
 component
 output = "false"
-hint = "test para la clase abstracta de cmd"
+hint = "test para la clase abstracta de Cmd"
 extends = "mxunit.framework.TestCase"
 {
 
@@ -8,7 +8,7 @@ extends = "mxunit.framework.TestCase"
 	 * @hint prueba del constructor de la clase con defaults
 	*/
 	public any function init_default_test() {
-		var cmd = CreateObject( "component", "zebra_builder.cmd" );
+		var cmd = CreateObject( "component", "zebra_builder.Cmd" );
 		cmd.init();
 		assertEquals( "",    cmd.cmd,        "comando por default" );
 		assertEquals( "^",   cmd.carret,     "carret por default" );
@@ -24,7 +24,7 @@ extends = "mxunit.framework.TestCase"
 	 * @hint prueba del constructor de la clase sin defaults
 	*/
 	public any function init_not_default_test() {
-		var cmd = CreateObject( "component", "zebra_builder.cmd" );
+		var cmd = CreateObject( "component", "zebra_builder.Cmd" );
 		cmd.init(cmd = "cmd", carret = "[", delimiter = ";", tilde = "]",
 			DPM = 16, is_metric = false, is_command = true, indent_lvl = 5);
 
@@ -42,7 +42,7 @@ extends = "mxunit.framework.TestCase"
 	 * @hint prueba de la conversion del comando a cadena
 	*/
 	public any function to_string() {
-		var cmd = CreateObject( "component", "zebra_builder.cmd" );
+		var cmd = CreateObject( "component", "zebra_builder.Cmd" );
 		cmd.init();
 
 		var str = cmd.str();
