@@ -19,4 +19,6 @@ hint="define la configuracion de las prubas unitarias."
 	this.mappings[ "/spec" ] = this.directory & "spec/";
 	// direcion del builder de zebra
 	this.mappings[ "/zebra_builder" ] = this.directory & "../zebra_builder/";
+	// direcion de los snippets
+	this.mappings[ "/snippet" ] = this.directory & "../snippet/";
 }

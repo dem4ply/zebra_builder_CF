@@ -2,6 +2,7 @@
  
 <!--- agrega las pruebas de la clase cmd --->
 <cfset testSuite.addAll( "spec.Cmd_test" ) />
+<cfset testSuite.addAll( "spec.Vector2_test" ) />
  
 <!---
     Run the tests that have been added. This will include all the
